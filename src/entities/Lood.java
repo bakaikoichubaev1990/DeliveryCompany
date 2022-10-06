@@ -44,4 +44,14 @@ public class Lood {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return "Lood{" +
+                "height=" + height +
+                ", width=" + width +
+                ", length=" + length +
+                ", weight=" + weight +
+                '}';
+    }
 }

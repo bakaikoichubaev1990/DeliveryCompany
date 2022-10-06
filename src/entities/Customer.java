@@ -2,18 +2,27 @@ package entities;
 
 public class Customer {
     private String customerName;
-    private String Order;
+    private  Order order;
 
-    public Customer(String customerName, String order) {
+    public Customer(String customerName, Order order) {
         this.customerName = customerName;
-        Order = order;
+        this.order = order;
     }
 
     public String getCustomerName() {
         return customerName;
     }
 
-    public String getOrder() {
-        return Order;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }
+
