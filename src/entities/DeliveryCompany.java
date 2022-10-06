@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DeliveryCompany {
     private String companyName;
     public static final int pricePerKilogram = 10;
-    public static final int maxCapacityPerCubeSantimete = 50;
+    public static final int maxCapacityPerCubeSantimeter = 50;
     private ArrayList<Customer> list = new ArrayList<>();
 
 
