@@ -1,15 +1,13 @@
 package entities;
 
-public class Lood {
+public class Load {
     private int height;
     private int width;
-    private int length;
     private int weight;
 
-    public Lood(int height, int width, int length, int weight) {
+    public Load(int height, int width, int weight) {
         this.height = height;
         this.width = width;
-        this.length = length;
         this.weight = weight;
     }
 
@@ -29,29 +27,11 @@ public class Lood {
         this.width = width;
     }
 
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
     public int getWeight() {
         return weight;
     }
 
     public void setWeight(int weight) {
         this.weight = weight;
-    }
-
-    @Override
-    public String toString() {
-        return "Lood{" +
-                "height=" + height +
-                ", width=" + width +
-                ", length=" + length +
-                ", weight=" + weight +
-                '}';
     }
 }

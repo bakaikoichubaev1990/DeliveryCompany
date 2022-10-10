@@ -1,28 +1,31 @@
 package entities;
 
+import java.util.ArrayList;
+
 public class Customer {
-    private String customerName;
-    private  Order order;
+    private String name;
+    private ArrayList<Order> orders = new ArrayList<>();
 
-    public Customer(String customerName, Order order) {
-        this.customerName = customerName;
-        this.order = order;
+
+
+    public Customer(String name) {
+        this.name = name;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getName() {
+        return name;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Order getOrder() {
-        return order;
+    public ArrayList<Order> getOrder() {
+        return orders;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void addOrder(Order order){
+        orders.add(order);
     }
+
 }
-
